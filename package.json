@@ -1,0 +1,26 @@
+{
+  "name": "react-state-management-demos",
+  "version": "1.0.0",
+  "description": "react state management demos",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.8.1",
+    "clsx": "^1.1.1",
+    "immer": "^9.0.12",
+    "lodash.get": "^4.4.2",
+    "mobx": "^6.5.0",
+    "mobx-state-tree": "^5.1.3",
+    "next": "^12.1.5",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-redux": "^7.2.8",
+    "redux": "^4.1.2"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.44",
+    "typescript": "^4.6.3"
+  }
+}
