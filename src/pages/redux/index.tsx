@@ -1,6 +1,6 @@
 import { Provider } from 'react-redux';
-import { ReduxNode } from './node';
-import store from './store';
+import { ReduxNode } from '../../components/ReduxNode';
+import store from '../../store/redux';
 
 export default function ReduxDemo() {
   return (

@@ -1,6 +1,6 @@
-import { Provider } from './models';
-import { MobxNode } from './node';
-import { rootStore } from './store';
+import { Provider } from '../../models';
+import { MobxNode } from '../../components/MobxNode';
+import { rootStore } from '../../store/mobx';
 
 export default function MobxDemo() {
   return (

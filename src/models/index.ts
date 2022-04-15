@@ -1,6 +1,5 @@
 import { types, Instance } from 'mobx-state-tree';
 import { createContext, useContext } from 'react';
-import { CHANGE_NODE_VALUE } from './actions';
 
 const Node = types
   .model({
@@ -10,7 +9,7 @@ const Node = types
     children: types.array(types.late(() => Node)),
   })
   .actions((self) => ({
-    [CHANGE_NODE_VALUE](newValue) {
+    setNodeValue(newValue) {
       self.value = newValue;
     },
   }));

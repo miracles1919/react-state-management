@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
 import produce from 'immer';
 import get from 'lodash.get';
-import { CHANGE_NODE_VALUE } from './actions';
-import data from '../../data';
+import { CHANGE_NODE_VALUE } from '../actions';
+import data from '../data';
 
 const initialState = data;
 

@@ -2,7 +2,7 @@ import { useRef, useEffect, useCallback, FC } from 'react';
 import { createLine } from '../utils';
 import { withStyle } from '../utils/style';
 import { observer } from 'mobx-react-lite';
-import { useModel } from './models';
+import { useModel } from '../models';
 
 export type NodeProps = {
   id?: string;

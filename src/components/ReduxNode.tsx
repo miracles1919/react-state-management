@@ -1,6 +1,6 @@
-import { useRef, useEffect, useCallback, FC, ReactNode } from 'react';
+import { useRef, useEffect, useCallback, FC } from 'react';
 import { connect, useDispatch } from 'react-redux';
-import { setNodeValue } from './actions';
+import { setNodeValue } from '../actions';
 import { createLine } from '../utils';
 import { withStyle } from '../utils/style';
 
