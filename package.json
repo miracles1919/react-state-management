@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "react state management demos",
   "scripts": {
-    "dev": "next dev"
+    "dev": "next dev",
+    "build": "next build && next export -o docs"
   },
   "license": "MIT",
   "dependencies": {

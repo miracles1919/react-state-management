@@ -1,7 +1,8 @@
+const isProd = process.env.NODE_ENV === 'production';
+
 module.exports = {
   future: {
     webpack5: true
   },
-  basePath: '/state-demos',
-  assetPrefix: '/state-demos'
-}
+  assetPrefix: isProd ? '/react-state-management' : '',
+};
