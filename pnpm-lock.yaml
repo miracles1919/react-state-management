@@ -7,6 +7,7 @@ specifiers:
   immer: ^9.0.12
   lodash.get: ^4.4.2
   mobx: ^6.5.0
+  mobx-react-lite: ^3.3.0
   mobx-state-tree: ^5.1.3
   next: ^12.1.5
   react: 17.0.2
@@ -21,6 +22,7 @@ dependencies:
   immer: registry.npmmirror.com/immer/9.0.12
   lodash.get: registry.npmmirror.com/lodash.get/4.4.2
   mobx: registry.npmmirror.com/mobx/6.5.0
+  mobx-react-lite: registry.npmmirror.com/mobx-react-lite/3.3.0_3b110ddd052df537d55bc762cdd4d0b8
   mobx-state-tree: registry.npmmirror.com/mobx-state-tree/5.1.3_mobx@6.5.0
   next: registry.npmmirror.com/next/12.1.5_react-dom@17.0.2+react@17.0.2
   react: registry.npmmirror.com/react/17.0.2
@@ -304,6 +306,27 @@ packages:
     hasBin: true
     dependencies:
       js-tokens: registry.npmmirror.com/js-tokens/4.0.0
+    dev: false
+
+  registry.npmmirror.com/mobx-react-lite/3.3.0_3b110ddd052df537d55bc762cdd4d0b8:
+    resolution: {integrity: sha512-U/kMSFtV/bNVgY01FuiGWpRkaQVHozBq5CEBZltFvPt4FcV111hEWkgwqVg9GPPZSEuEdV438PEz8mk8mKpYlA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/mobx-react-lite/-/mobx-react-lite-3.3.0.tgz}
+    id: registry.npmmirror.com/mobx-react-lite/3.3.0
+    name: mobx-react-lite
+    version: 3.3.0
+    peerDependencies:
+      mobx: ^6.1.0
+      react: ^16.8.0 || ^17
+      react-dom: '*'
+      react-native: '*'
+    peerDependenciesMeta:
+      react-dom:
+        optional: true
+      react-native:
+        optional: true
+    dependencies:
+      mobx: registry.npmmirror.com/mobx/6.5.0
+      react: registry.npmmirror.com/react/17.0.2
+      react-dom: registry.npmmirror.com/react-dom/17.0.2_react@17.0.2
     dev: false
 
   registry.npmmirror.com/mobx-state-tree/5.1.3_mobx@6.5.0:
