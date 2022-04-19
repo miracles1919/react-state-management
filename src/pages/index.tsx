@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Router from 'next/router';
 
 Router.events.on('routeChangeStart', function () {
-  console.log('change')
+  console.log('change');
   Array.from(document.getElementsByClassName('line')).forEach((dom) =>
     dom.removeAttribute('style')
   );
@@ -20,6 +20,10 @@ export default function Index() {
       <br />
       <Link href='/mobx'>
         <button>mobx demo</button>
+      </Link>
+      <br />
+      <Link href='/recoil'>
+        <button>recoil demo</button>
       </Link>
     </div>
   );
