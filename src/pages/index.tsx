@@ -14,6 +14,7 @@ export default function Index() {
       <Link href='/redux'>
         <button>redux demo</button>
       </Link>
+      <br />
       <Link href='/toolkit'>
         <button>toolkit demo</button>
       </Link>
@@ -24,6 +25,10 @@ export default function Index() {
       <br />
       <Link href='/recoil'>
         <button>recoil demo</button>
+      </Link>
+      <br />
+      <Link href='/hox'>
+        <button>hox demo</button>
       </Link>
     </div>
   );
