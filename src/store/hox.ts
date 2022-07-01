@@ -10,10 +10,8 @@ export const [useNodeStore, NodeStoreProvider] = createStore(() => {
     setState((draft) => {
       const node = getNode(draft, id);
       node.value = value;
-      console.log('node', node.value);
     });
   }
-  console.log('state', state);
 
   return {
     data: state,

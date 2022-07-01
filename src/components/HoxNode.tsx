@@ -1,4 +1,4 @@
-import { useRef, useEffect, useCallback, FC } from 'react';
+import { useRef, useEffect, useCallback, FC, memo } from 'react';
 import { useNodeStore } from '../store/hox';
 import { createLine } from '../utils';
 import { withStyle } from '../utils/style';
@@ -18,12 +18,13 @@ export type NodeChild = {
   value: string;
 };
 
-export const HoxNode: FC<NodeProps> = (props) => {
-  const { data, setNodeValue } = useNodeStore();
-
-  const nodeRef = useRef<HTMLDivElement>(null);
+export const HoxNode: FC<NodeProps> = memo((props) => {
   const { id } = props;
+  const { data, setNodeValue } = useNodeStore((store) => [
+    getNode(store.data, id),
+  ]);
   const node = getNode(data, id);
+  const nodeRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     nodeRef.current.classList.add('rendered');
@@ -71,8 +72,8 @@ export const HoxNode: FC<NodeProps> = (props) => {
                   }
                 }}
               >
-                {/* @ts-ignore */} {/* 理想情况 */}
-                <HoxNode id={child.id} {...child} />
+                {/* 理想情况 */}
+                <HoxNode {...props} id={child.id} />
               </div>
             );
           })}
@@ -80,4 +81,4 @@ export const HoxNode: FC<NodeProps> = (props) => {
       )}
     </div>
   );
-};
+});
